@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Musa — CV</title>
+  <meta name="description" content="Musa — Professional CV. Downloadable PDF and on-page viewer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#0f1724" />
+  <!-- Social preview (replace image if you make a visual card) -->
+  <meta property="og:title" content="Musa — CV" />
+  <meta property="og:description" content="Professional CV of Musa — viewable online or downloadable PDF." />
+</head>
+<body class="light">
+  <button id="modeToggle" class="mode-toggle" aria-label="Toggle dark mode">🌙</button>
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-left">
+        <img src="avatar.png" alt="Musa" class="avatar" onerror="this.style.display='none'">
+        <h1>Musa</h1>
+        <p class="subtitle">Product Designer • Frontend Engineer • Problem Solver</p>
+
+        <div class="contact">
+          <a href="mailto:you@example.com">you@example.com</a>
+          <a href="https://github.com/Musty44" target="_blank" rel="noopener">github.com/Musty44</a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a>
+        </div>
+
+        <div class="actions">
+          <a class="btn" id="downloadBtn" href="CV_Musa_v3.pdf" download>Download PDF</a>
+          <a class="btn ghost" href="#viewer">View on page</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="summary card">
+          <h3>Summary</h3>
+          <p>Creative product designer & engineer with experience designing and building responsive web apps. I deliver human-centered solutions backed by user research and solid frontend engineering.</p>
+        </div>
+
+        <div class="highlights">
+          <div class="chip">React</div>
+          <div class="chip">Design Systems</div>
+          <div class="chip">Figma</div>
+          <div class="chip">Accessibility</div>
+          <div class="chip">TypeScript</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="left-col">
+      <article class="card">
+        <h2>Experience</h2>
+        <div class="item">
+          <h4>Senior Product Designer — Acme Corp</h4>
+          <p class="muted">2021 — Present</p>
+          <ul>
+            <li>Led redesign of customer dashboard increasing retention by 12%.</li>
+            <li>Built a design system used across 8 product teams.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h4>Frontend Engineer — Beta Studio</h4>
+          <p class="muted">2018 — 2021</p>
+          <ul>
+            <li>Ship high-performance single-page apps with React and TypeScript.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Education</h2>
+        <div class="item">
+          <h4>B.Sc. Computer Science — University</h4>
+          <p class="muted">2014 — 2018</p>
+        </div>
+      </article>
+    </section>
+
+    <aside class="right-col">
+      <article class="card">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>Design Systems</li>
+          <li>UX Research</li>
+          <li>React & TypeScript</li>
+          <li>HTML/CSS & Accessibility</li>
+          <li>Prototyping (Figma)</li>
+        </ul>
+      </article>
+
+      <article id="viewer" class="card pdf-viewer">
+        <h2>CV (embedded)</h2>
+        <div class="iframe-wrap" role="region" aria-label="CV PDF viewer">
+          <iframe src="CV_Musa_v3.pdf" title="Musa CV" frameborder="0"></iframe>
+        </div>
+        <p class="muted small">If the PDF does not render, click <a href="CV_Musa_v3.pdf" download>Download PDF</a>.</p>
+      </article>
+    </aside>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Musa — Built with ❤️ · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
